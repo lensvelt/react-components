@@ -1,9 +1,9 @@
 var GroceryList = (props) => (
   <div>
     <h2>Grocery List</h2>
-    {this.props.items.map((item) => (
+    {props.items.map(item => 
       <GroceryListItem item={item}/>
-    ))}
+    )}
   </div>
 );
 
@@ -13,7 +13,7 @@ class GroceryListItem extends React.Component {
   }
   render() {
     return (
-      <div>{props.item}</div>
+      <div>{this.props.item}</div>
     );
   } 
 };
