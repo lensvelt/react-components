@@ -10,6 +10,15 @@ var GroceryList = (props) => (
 class GroceryListItem extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      hovering: false
+    }
+  }
+  onMouseEnterList() {
+    this.setState({'hovering': true});
+  }
+  onMouseLeaveList() {
+    this.setState({'hovering': false});
   }
   render() {
     return (
