@@ -14,8 +14,15 @@ class GroceryList extends React.Component {
   }
 };
 
-var GroceryListItem = (props) => (
-  <div>{props.item}</div>
-);
+class GroceryListItem extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>{props.item}</div>
+    );
+  } 
+};
 
 ReactDOM.render(<GroceryList items={['kale', 'spinach', 'tomatoes', 'rice']}/>, document.getElementById("app"));
